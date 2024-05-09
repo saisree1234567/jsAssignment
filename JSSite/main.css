@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+h1, h2 {
+    color: #5E9400;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+a {
+    color: #5E9400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #5E9400;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 8px 16px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #3d5b00;
+    border-radius: 4px;
+}
+
+/* Table Styling */
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #5E9400;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d8e9cc;
+    color: #3d5b00;
+}
+
+/* Side Navigation Styles */
+.sidenav {
+    height: 100vh; /* Full height */
+    width: 250px; /* Width of the side nav */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0; /* Align to the left */
+    background-color: #5E9400; /* Background color */
+    padding-top: 20px; /* Padding at the top */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.sidenav a {
+    display: block; /* Make each link a block */
+    color: #fff; /* White text color */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    margin: 8px 0; /* Margin between links */
+}
+
+.sidenav a:hover {
+    background-color: #3d5b00; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Main content area */
+.main {
+    margin-left: 250px; /* Margin left for main content */
+    padding: 20px; /* Padding */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+    background-color: #d8e9cc;
+    color: #3d5b00;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.accordion.active, .accordion:hover {
+    background-color: #b2d2a4;
+    color: #fff;
+}
+  
+.panel {
+
+    transition: max-height 0.2s ease-out;
+}
+  
+.accordion.active,
+.accordion:focus:not(:focus-visible) {
+    border: none;
+}

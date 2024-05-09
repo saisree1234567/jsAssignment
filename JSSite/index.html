@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="home.html">Hometown</a>
+    </div>
+    <div class="main">
+    <h1>Welcome... !!</h1>
+    <button onclick="changeContent('content-section', 'New Content 1')">Change Content 1</button>
+    <button onclick="changeContent('content-section', 'New Content 2')">Change Content 2</button>
+    <button onclick="changeContent('content-section', 'New Content 3')">Change Content 3</button>
+    
+    <p id="content-section">Original content!.</p>
+    
+    <input type="text" id="input-field" placeholder="Enter any text (not empty)" style="width: 300px;">
+    <button onclick="validateInput()">Validate Input</button>
+    <p id="error-message" style="color: red;"></p>
+    
+    <h2>Accordion</h2>
+	<button class="accordion">Sachin Tendulkar</button>
+	<div class="panel">
+		<p>Hailed as a best batsman of all times, Sachin Tendulkar was born to play cricket. He is the one who sets all the records - he is a record holder in Tests as well as ODIs. In a span of 13 years (1989-2013), Tendulkar, also known as the God of Cricket, displayed his extra-ordinary batting skills, discipline and commitment to the game.</p>
+	</div>
+	
+	<button class="accordion">Virat Kohli</button>
+	<div class="panel">
+		<p>Virat Kohli is actually on the reigns of Indian national cricket team and is thought one of the most successful batsmen of the modern times. One who is famous for his destructive batting style, fitness and leadership qualities, Kohli has breached many records and has never had any off-form days in the different formats of the game.</p>
+	</div>
+	
+	<button class="accordion">MS Dhoni</button>
+	<div class="panel">
+		<p>MS Dhoni is a past Indian cricket player who captained the Indian team to fulfill the victory in the 2007 T20 World Cup, 2011 Cricket World Cup and the 2013 Champions Trophy. He is likely one of the best wicket-keeper/ batsmen and captains in the history of Indian cricket after all, he is famous for his calm attitude while all strategizing.</p>
+	</div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
